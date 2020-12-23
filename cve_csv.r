@@ -10,6 +10,12 @@ download.file(url = "https://cve.mitre.org/data/downloads/allitems.csv",
 # header as FALSE since there is no header with fileds and we define them
 # accordingly using col.names argument
 #
-cve <- read.csv(cves.src, header = FALSE,col.names = c("CVE Name","Status","Description","References","Phase","Votes","Comments"),skip = 10)
+cve <- read.csv(cves.src, header = FALSE,col.names = c("CVE Name",
+                                                       "Status",
+                                                       "Description",
+                                                       "References",
+                                                       "Phase",
+                                                       "Votes",
+                                                       "Comments"),skip = 10)
 
 # More formatting or new variables to be done
