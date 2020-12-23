@@ -11,6 +11,4 @@ download.file(url = "https://cve.mitre.org/data/downloads/allitems.csv",
 #
 cve <- read.csv(cves.src, header = FALSE,col.names = c("CVE Name","Status","Description","References","Phase","Votes","Comments"),skip = 10)
 
-#cves.raw <- raw.cves$CVE_Items$cve
-#conf.raw <- raw.cves$CVE_Items$configurations
-#impc.raw <- raw.cves$CVE_Items$impact
+# More formatting or new variables to be done
